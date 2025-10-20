@@ -19,8 +19,7 @@ pipeline {
 
     stage('Unit Test') {
       steps {
-        bat 
-        'echo "Menjalankan Unit Test..."'
+        bat 'echo "Menjalankan Unit Test..."'
       }
     }
 
@@ -47,4 +46,5 @@ pipeline {
     }
   }
 }
+
 
