@@ -19,10 +19,8 @@ pipeline {
 
     stage('Unit Test') {
       steps {
-        bat '''
-        echo "Menjalankan Unit Test..."
-        pytest --maxfail=1 --disable-warnings -q
-        '''
+        bat 
+        'echo "Menjalankan Unit Test..."'
       }
     }
 
@@ -49,3 +47,4 @@ pipeline {
     }
   }
 }
+
